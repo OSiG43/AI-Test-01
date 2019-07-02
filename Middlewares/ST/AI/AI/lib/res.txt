@@ -1,0 +1,598 @@
+
+ai_log.o:
+00000001 a __iar_systems$$module
+
+ai_math_helpers.o:
+00000090 t .text_10
+000000c4 t .text_11
+000000dc t .text_12
+000000e0 t .text_13
+000000e4 t .text_14
+000000e8 t .text_15
+000000ec t .text_16
+0000002c t .text_3
+00000044 t .text_4
+00000048 t .text_5
+0000004c t .text_6
+00000050 t .text_7
+00000060 t .text_8
+00000070 t .text_9
+00000001 a __iar_systems$$module
+00000000 T ai_math_dot_array
+00000044 T ai_math_exp
+00000090 T ai_math_hard_sigmoid
+00000048 T ai_math_pow
+00000060 T ai_math_prelu
+00000050 T ai_math_relu
+00000070 T ai_math_sigmoid
+000000c4 T ai_math_sign
+0000002c T ai_math_sqrt
+0000004c T ai_math_tanh
+         U arm_dot_prod_f32
+         U expf
+         U powf
+         U tanhf
+
+ai_network_inspector.o:
+00000048 t .text_4
+0000004c t .text_5
+0000009e t .text_6
+00000120 t .text_7
+000001b4 t .text_8
+00000232 t .text_9
+00000001 a __iar_systems$$module
+0000009e T ai_inspector_bind_network
+00000000 T ai_inspector_create
+0000004c T ai_inspector_destroy
+000001b4 T ai_inspector_get_report
+00000232 T ai_inspector_run
+00000120 T ai_inspector_unbind_network
+         U ai_network_inspect_destroy
+         U ai_network_inspect_get_report
+         U ai_network_inspect_init
+         U ai_platform_context_acquire
+         U ai_platform_context_release
+         U ai_platform_network_process
+         U free
+00000000 b g_inspector_context
+         U malloc
+
+ai_platform.o:
+00000001 a __iar_systems$$module
+
+ai_platform_interface.o:
+00000172 t .text_10
+00000176 t .text_11
+00000178 t .text_12
+000001bc t .text_13
+000001c8 t .text_14
+00000244 t .text_15
+00000282 t .text_16
+00000314 t .text_17
+00000318 t .text_18
+00000478 t .text_19
+0000047c t .text_20
+00000480 t .text_21
+00000484 t .text_22
+00000488 t .text_23
+0000048c t .text_24
+00000490 t .text_25
+00000494 t .text_26
+00000498 t .text_27
+0000049c t .text_28
+000004a0 t .text_29
+00000056 t .text_3
+000004a4 t .text_30
+000004a8 t .text_31
+000004ac t .text_32
+000004b4 t .text_34
+000004b8 t .text_35
+000004bc t .text_36
+000004c0 t .text_37
+00000062 t .text_4
+00000092 t .text_5
+000000c6 t .text_6
+000000fa t .text_7
+0000012e t .text_8
+0000016a t .text_9
+         U __aeabi_memcpy
+00000001 a __iar_systems$$module
+000004b0 t _platform_network_sanity_check{8}::signatures
+00000000 t ai_array_get_byte_size
+         U ai_check_custom_types
+00000176 t ai_copy_buffer_fake_dst
+00000172 t ai_copy_buffer_fake_src
+         U ai_layers_forward_all
+00000056 t ai_mem_copy_buffer
+000000c6 T ai_platform_api_get_version
+0000012e T ai_platform_context_acquire
+0000016a T ai_platform_context_release
+000000fa T ai_platform_interface_api_get_version
+000001c8 T ai_platform_network_create
+00000244 T ai_platform_network_destroy
+00000178 T ai_platform_network_get_error
+00000282 T ai_platform_network_init
+00000318 T ai_platform_network_process
+000001bc T ai_platform_network_set_error
+00000062 T ai_platform_runtime_get_revision
+00000092 T ai_platform_runtime_get_version
+         U core_get_error
+         U core_init
+         U core_set_error
+
+core_common.o:
+00000004 t .text_3
+0000000e t .text_4
+00000001 a __iar_systems$$module
+00000004 T core_get_error
+00000000 T core_init
+0000000e T core_set_error
+
+core_conv2d_kernels_float.o:
+00000001 a __iar_systems$$module
+
+core_net_inspect.o:
+00000522 t .text_10
+000005ac t .text_11
+000005b0 t .text_12
+000005b4 t .text_13
+000005b8 t .text_14
+000005bc t .text_15
+000005c0 t .text_16
+000005c4 t .text_17
+000005c8 t .text_18
+00000096 t .text_4
+000001a6 t .text_5
+000001ee t .text_6
+00000278 t .text_7
+00000378 t .text_8
+000004f2 t .text_9
+         U __aeabi_memcpy
+00000001 a __iar_systems$$module
+00000278 t _forward_inspect_validate
+00000000 t _inspect_tensor_list
+000001a6 t _snapshot_init_report
+00000000 d _snapshot_init_report::report_id
+00000096 t _snapshot_init_report_node
+000001ee t _snapshot_push
+         U ai_layer_type_is_valid
+00000522 T ai_network_inspect_destroy
+000004f2 T ai_network_inspect_get_report
+00000378 T ai_network_inspect_init
+         U ai_platform_context_acquire
+         U core_utils_generate_network_signature
+         U free
+         U malloc
+
+core_utils.o:
+000000ac t .text_3
+0000013a t .text_4
+0000013c t .text_5
+         U __aeabi_memcpy
+00000001 a __iar_systems$$module
+00000000 t _compute_fletcher32
+000000ac t _serialize_signature_buffer
+0000013a T core_utils_compute_crc32
+0000013c T core_utils_generate_network_signature
+         U free
+         U malloc
+
+layers.o:
+00000004 r .rodata_27
+00000008 r .rodata_28
+0000000c r .rodata_29
+00000010 r .rodata_30
+00000014 r .rodata_31
+00000018 r .rodata_32
+000000f4 t .text_10
+000000f8 t .text_11
+000000fc t .text_12
+00000118 t .text_13
+00000140 t .text_14
+00000148 t .text_15
+00000150 t .text_16
+00000158 t .text_17
+00000160 t .text_18
+00000174 t .text_19
+0000017c t .text_20
+00000184 t .text_21
+0000018c t .text_22
+00000198 t .text_23
+000001ac t .text_24
+00000014 t .text_3
+0000003c t .text_4
+000000e0 t .text_5
+000000e4 t .text_6
+000000e8 t .text_7
+000000ec t .text_8
+000000f0 t .text_9
+00000001 a __iar_systems$$module
+00000014 T ai_check_custom_types
+000001b4 t ai_check_custom_types::ref_signatures
+000000fc T ai_layer_type_is_valid
+0000003c T ai_layer_type_name
+00000118 T ai_layers_forward_all
+00000000 T ai_layers_forward_layer
+         U memcmp
+
+layers_conv2d_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+layers_conv2d_generic_float.o:
+00000750 t .text_10
+000007ec t .text_11
+000007f0 t .text_12
+00000954 t .text_13
+00000c88 t .text_14
+00000dcc t .text_15
+00000f78 t .text_16
+00000f7c t .text_17
+00000f80 t .text_18
+00000110 t .text_3
+00000250 t .text_4
+00000254 t .text_5
+000003b0 t .text_6
+000003b4 t .text_7
+00000474 t .text_8
+00000478 t .text_9
+00000001 a __iar_systems$$module
+00000110 t ai_conv2d_kernel_depthwise_f32
+000003b4 t ai_conv2d_kernel_f32
+00000254 t ai_conv2d_kernel_group_f32
+00000000 t ai_conv2d_kernel_simple_f32
+00000750 T ai_dict4_dot_array_f32
+00000478 T ai_dict8_dot_array_f32
+         U ai_math_dot_array
+00000dcc t arm_mat_gemm_f32
+000007f0 T forward_conv2d
+00000954 T forward_conv2d_nl_pool
+00000c88 T forward_dense
+00000f80 T forward_gemm
+00000474 t func_dummy
+
+layers_cycles_estimation.o:
+00000454 t .text_10
+00000458 t .text_11
+0000045c t .text_12
+00000460 t .text_13
+00000464 t .text_14
+00000468 t .text_15
+0000046c t .text_16
+00000470 t .text_17
+00000474 t .text_18
+00000478 t .text_19
+0000047c t .text_20
+00000480 t .text_21
+000004c4 t .text_22
+00000520 t .text_23
+0000002c t .text_9
+         U __aeabi_f2d
+00000001 a __iar_systems$$module
+00000000 B CYCLES_counter
+00000000 B CYCLES_filtxAverage
+00000000 B CYCLES_filtyAverage
+00000000 B CYCLES_measuredMacs
+00000000 T CYCLES_MeasurementsStart
+0000002c T CYCLES_MeasurementsStop
+00000000 B CYCLES_theoMacs
+00000330 b CyclesElapsed
+00000338 b CyclesFinalMHz
+00000334 b CyclesLayerCount
+0000009c b CyclesLayerOut
+00000000 b CyclesOut
+0000022c b CyclesStats
+         U dwtGetCycles
+         U HAL_RCC_GetHCLKFreq
+         U printf
+
+layers_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+layers_generic_float.o:
+00000530 t .text_10
+000006ac t .text_11
+000000bc t .text_3
+000000c0 t .text_4
+000000f4 t .text_5
+00000348 t .text_6
+00000376 t .text_7
+0000045c t .text_8
+00000514 t .text_9
+         U __aeabi_memcpy
+00000001 a __iar_systems$$module
+         U ai_math_dot_array
+00000348 T forward_add
+00000376 T forward_concat
+00000514 T forward_permute
+000000f4 T forward_slice
+000000c0 T forward_split
+00000000 T forward_time_delay
+000006ac T forward_time_distributed
+0000045c t permute_items
+00000530 t td_layer_process
+
+layers_nl_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+layers_nl_generic_float.o:
+00000298 t .text_10
+00000324 t .text_11
+00000328 t .text_12
+00000374 t .text_13
+000003d4 t .text_14
+00000448 t .text_15
+000004f0 t .text_16
+000004f4 t .text_17
+0000056c t .text_18
+000005d8 t .text_19
+000005dc t .text_20
+000005e0 t .text_21
+00000648 t .text_22
+000006a0 t .text_23
+000006e2 t .text_24
+00000124 t .text_3
+00000158 t .text_4
+00000180 t .text_5
+000001bc t .text_6
+000001f4 t .text_7
+0000022c t .text_8
+00000258 t .text_9
+00000001 a __iar_systems$$module
+         U expf
+000005e0 T forward_clip
+000004f4 T forward_prelu
+00000374 T forward_relu
+000003d4 T forward_relu6
+00000448 T forward_selu
+00000648 T forward_sigmoid
+0000056c T forward_sign
+000006e2 T forward_sm
+000006a0 T forward_tanh
+000001f4 T nl_func_clip_array_f32
+00000328 T nl_func_prelu_array_f32
+0000022c T nl_func_relu_array_f32
+00000258 T nl_func_relu6_array_f32
+00000298 T nl_func_selu_array_f32
+00000180 T nl_func_sigmoid_array_f32
+000001bc T nl_func_sign_array_f32
+00000124 T nl_func_sm_array_f32
+00000000 T nl_func_sm_channel_f32
+00000158 T nl_func_tanh_array_f32
+         U tanhf
+
+layers_norm_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+layers_norm_generic_float.o:
+00000520 t .text_10
+00000108 t .text_3
+00000200 t .text_4
+000002d8 t .text_5
+000002dc t .text_6
+000002e0 t .text_7
+00000330 t .text_8
+000004de t .text_9
+         U __aeabi_memclr
+00000001 a __iar_systems$$module
+         U ai_math_sqrt
+00000330 T forward_bn
+000004de T forward_lrn
+00000520 T forward_norm
+000002e0 T func_lrn_array_f32
+00000000 T func_lrn_channel_f32
+00000108 T func_norm_array_f32
+00000200 T func_norm_l2_fast_array_f32
+         U powf
+
+layers_pool_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+layers_pool_generic_float.o:
+000000c0 t .text_3
+000001dc t .text_4
+000003dc t .text_5
+00000001 a __iar_systems$$module
+000003dc T forward_ap
+000001dc T forward_mp
+000000c0 T pool_func_ap_array_f32
+00000000 T pool_func_mp_array_f32
+
+layers_rnn_generic_float.o:
+000008a0 t .text_10
+00000004 t .text_3
+00000174 t .text_4
+000002ca t .text_5
+00000530 t .text_6
+0000064c t .text_7
+00000766 t .text_8
+0000089c t .text_9
+         U __aeabi_memclr
+         U __aeabi_memcpy
+00000001 a __iar_systems$$module
+0000064c T _forward_gru_after
+00000530 t _forward_gru_before
+         U ai_math_dot_array
+000008a0 T forward_gru
+00000766 T forward_lstm
+         U free
+00000000 t func_dummy
+00000174 T gru_cell_after
+00000004 T gru_cell_before
+000002ca T lstm_cell
+         U malloc
+
+op_binary_func.o:
+00000006 t .text_3
+0000000c t .text_4
+00000012 t .text_5
+00000018 t .text_6
+00000001 a __iar_systems$$module
+00000018 T ai_custom
+00000012 T ai_div
+0000000c T ai_mul
+00000006 T ai_sub
+00000000 T ai_sum
+
+operators.o:
+00000104 t .text_10
+00000118 t .text_11
+00000130 t .text_12
+00000144 t .text_13
+0000015c t .text_14
+00000170 t .text_15
+00000188 t .text_16
+000001a0 t .text_17
+0000006c t .text_3
+00000074 t .text_4
+000000b4 t .text_5
+000000b8 t .text_6
+000000bc t .text_7
+000000d4 t .text_8
+000000ec t .text_9
+0000006a t __iar_annotation$$tailcall
+00000001 a __iar_systems$$module
+00000000 T ai_compute_operator
+0000006c T ai_layer_compute_operator
+00000074 T ai_operator_type_name
+         U printf
+
+operators_binary_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+operators_binary_generic_float.o:
+00000048 t .text_3
+0000004c t .text_4
+00000001 a __iar_systems$$module
+0000004c T compute_binary_op
+00000000 T compute_unary_op
+
+operators_conv2d_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+operators_conv2d_generic_float.o:
+00000990 t .text_10
+00000aac t .text_11
+00000144 t .text_3
+000002c0 t .text_4
+000002c4 t .text_5
+0000045c t .text_6
+00000460 t .text_7
+00000520 t .text_8
+0000068c t .text_9
+00000aa6 t __iar_annotation$$tailcall
+00000001 a __iar_systems$$module
+00000144 t ai_conv2d_kernel_depthwise_f32
+00000460 t ai_conv2d_kernel_f32
+000002c4 t ai_conv2d_kernel_group_f32
+00000000 t ai_conv2d_kernel_simple_f32
+         U ai_dict4_dot_array_f32
+         U ai_dict8_dot_array_f32
+         U ai_math_dot_array
+0000068c T compute_conv2d_grp
+00000520 T compute_conv2d_seq
+00000aac T compute_dense
+00000990 T compute_dense_inline
+
+operators_nl_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+operators_nl_generic_float.o:
+0000017c t .text_10
+000001a0 t .text_11
+000001da t .text_12
+00000200 t .text_13
+00000244 t .text_14
+00000248 t .text_15
+0000024c t .text_16
+00000250 t .text_17
+00000034 t .text_3
+00000062 t .text_4
+00000090 t .text_5
+000000b0 t .text_6
+000000de t .text_7
+0000010c t .text_8
+00000142 t .text_9
+00000198 t __iar_annotation$$tailcall
+0000023c t __iar_annotation$$tailcall
+00000172 t __iar_annotation$$tailcall
+000001f6 t __iar_annotation$$tailcall
+000000a8 t __iar_annotation$$tailcall
+000001d0 t __iar_annotation$$tailcall
+00000001 a __iar_systems$$module
+00000200 T compute_hard_sigmoid_inline
+00000142 T compute_prelu_el_wise
+000000b0 T compute_relu
+00000090 T compute_relu_inline
+000000de T compute_relu6
+0000010c T compute_selu
+00000062 T compute_sigmoid
+000001a0 T compute_sigmoid_inline
+0000017c T compute_sign
+00000000 T compute_sm
+00000250 T compute_sm_inline
+00000034 T compute_tanh
+000001da T compute_tanh_inline
+         U expf
+         U nl_func_relu_array_f32
+         U nl_func_relu6_array_f32
+         U nl_func_selu_array_f32
+         U nl_func_sigmoid_array_f32
+         U nl_func_sm_array_f32
+         U nl_func_tanh_array_f32
+         U tanhf
+
+operators_norm_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+operators_norm_generic_float.o:
+0000007c t .text_3
+0000022a t .text_4
+0000026c t .text_5
+00000072 t __iar_annotation$$tailcall
+00000001 a __iar_systems$$module
+0000007c T compute_bn
+00000000 T compute_bn_el_wise
+0000022a T compute_lrn
+0000026c T compute_norm
+         U func_lrn_array_f32
+         U func_norm_array_f32
+         U func_norm_l2_fast_array_f32
+
+operators_pool_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+operators_pool_generic_float.o:
+000000aa t .text_3
+0000017c t .text_4
+00000210 t .text_5
+000002c8 t .text_6
+000004c8 t .text_7
+000000a0 t __iar_annotation$$tailcall
+000002be t __iar_annotation$$tailcall
+0000020a t __iar_annotation$$tailcall
+00000174 t __iar_annotation$$tailcall
+00000001 a __iar_systems$$module
+000004c8 T compute_ap
+00000000 T compute_inline_ap_grp
+000000aa T compute_inline_ap_seq
+0000017c T compute_inline_mp_grp
+00000210 T compute_inline_mp_seq
+000002c8 T compute_mp
+
+operators_rnn_generic_fixed.o:
+00000001 a __iar_systems$$module
+
+operators_rnn_generic_float.o:
+00000368 t .text_3
+000005ca t .text_4
+000007fc t .text_5
+         U __aeabi_memclr
+         U __aeabi_memcpy
+00000001 a __iar_systems$$module
+         U ai_math_dot_array
+000007fc T compute_gru
+000005ca T compute_gru_after
+00000368 T compute_gru_before
+00000000 T compute_lstm
+         U free
+         U malloc
